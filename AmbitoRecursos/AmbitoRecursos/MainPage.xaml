@@ -4,8 +4,17 @@
              xmlns:local="clr-namespace:AmbitoRecursos"
              x:Class="AmbitoRecursos.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <Button Text="Uno"
+            BackgroundColor="Red"
+                Grid.Row="1">
+        </Button>
+        <Button Text="Dos"
+                BackgroundColor="Blue"
+                Grid.Row="2">
+        </Button>
+    </Grid>
 
 </ContentPage>
