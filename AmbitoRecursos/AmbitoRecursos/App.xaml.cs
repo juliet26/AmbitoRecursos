@@ -13,7 +13,7 @@ namespace AmbitoRecursos
 		{
 			InitializeComponent();
 
-			MainPage = new AmbitoRecursos.MainPage();
+			MainPage = new AmbitoRecursos.Estilos();
 		}
 
 		protected override void OnStart ()

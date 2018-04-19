@@ -3,17 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AmbitoRecursos"
              x:Class="AmbitoRecursos.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ColorPal">
+                Green
+            </Color>
+            <Color x:Key="ColorSec">
+                Orange
+            </Color>
+            <Color x:Key="ColorTer">
+                Blue
+            </Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-    <Grid>
-        <RowDefinition></RowDefinition>
-        <RowDefinition></RowDefinition>
+    <Grid BackgroundColor="{StaticResource ColorTer}">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Color x:Key="ColorPal">
+                    Green
+                </Color>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         <Button Text="Uno"
-            BackgroundColor="Red"
-                Grid.Row="1">
+                VerticalOptions="Center"
+                BackgroundColor="{StaticResource ColorPal}">
         </Button>
         <Button Text="Dos"
-                BackgroundColor="Blue"
-                Grid.Row="2">
+                Grid.Column="1"
+                VerticalOptions="Center"
+                BackgroundColor="{StaticResource ColorSec}">
         </Button>
     </Grid>
 
