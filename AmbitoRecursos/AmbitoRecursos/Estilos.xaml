@@ -5,12 +5,28 @@
              BackgroundColor="{StaticResource PageBack}">
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="LabelHead" TargetType="Label">
+                        <Setter Property="TextColor" Value="{StaticResource NormalTxtColor}">
+                        </Setter>
+                    </Style>
+                    <Style x:Key="ButtonFont" TargetType="Button">
+                        <Setter Property="FontSize" Value="Medium">
+                        </Setter>
+                        <Setter Property="FontAttributes" Value="Bold">
+                        </Setter>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
             <Label Text="Resource dictionary"
                    Style="{StaticResource LabelHead}"></Label>
             <Label Text="Recurso Xaml son definiciones de objetos que se utilizan más de una vez, esos son los recursos"
                    Margin="10,20,10,0"></Label>
             <Button
-                HorizontalOptions="Center">
+                HorizontalOptions="Center"
+                TextColor="{StaticResource NormalTxtColor}"
+                Style="{StaticResource ButtonFont}">
             </Button>
         </StackLayout>
     </ContentPage.Content>
