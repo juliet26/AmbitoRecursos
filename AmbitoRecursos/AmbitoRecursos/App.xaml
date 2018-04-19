@@ -4,7 +4,19 @@
              x:Class="AmbitoRecursos.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Color x:Key="PageBack">Chocolate</Color>
+            <Color x:Key="HeadTxtColor">Blue</Color>
+            <Color x:Key="NormalTxtColor">Orange</Color>
+            <Style x:Key="LabelHead" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold">
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center">
+                </Setter>
+                <Setter Property="TextColor" Value="{StaticResource HeadTxtColor}">
+                </Setter>
+            </Style>
+        </ResourceDictionary>
 
 	</Application.Resources>
 </Application>
